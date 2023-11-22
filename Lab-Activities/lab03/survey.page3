@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Web development" />
+		<meta name="keywords" content="HTML Markup" />
+		<meta name="author" content="Hai Nam Ngo" />
+		<title>Web Development Survey</title>
+</head>
+<body>
+<h1>Unit Delivery Survey</h1>
+
+<form id="survey" method="post"
+		action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+		
+<p>Which browser do you know how to use? (Check all that applies)
+		<br />
+	<input type="checkbox" name="cbchorme"
+			value="Chrome" />Chrome
+		<br />
+	<input type="checkbox" name="cbfirefox"
+			value="Firefox" />Firefox
+		<br />
+	<input type="checkbox" name="cbinternetexplorer"
+			value="internetexplorer" />Internet Explorer
+		<br />
+	<input type="checkbox" name="cbsafari"
+			value="safari" />Safari
+</p>
+
+<p>Which text editor do you know how to use? (Check all that applies)
+		<br />
+	<input type="checkbox" name="cbkomodo"
+			value="Komodo" />Komodo
+		<br />
+	<input type="checkbox" name="cbnotepad++"
+			value="Notepad++" />Notepad++
+		<br />
+	<input type="checkbox" name="cbsublimetext"
+			value="Sublime Text" />Sublime Text
+		<br />
+	<input type="checkbox" name="cbwrangler"
+			value="Wrangler" />Wrangler
+</p>
+	<p>
+		<input type="submit" value="Submit Page" />
+		<input type="reset" value="Reset" />
+	</p>
+	
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page2">Previous Page</a>
+<br />
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page4">Next Page</a>
+</form>
+</body>
+</html>

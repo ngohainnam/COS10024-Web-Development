@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Web development" />
+		<meta name="keywords" content="HTML Markup" />
+		<meta name="author" content="Hai Nam Ngo" />
+		<title>Web Development Survey</title>
+</head>
+<body>
+<h1>Unit Delivery Survey</h1>
+
+<form id="survey" method="post"
+		action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+
+<p>How do you rate the lecture materials?
+		<br />
+	<input type="radio" name="rbRating1"
+			value="Excellent" />Excellent
+		<br />
+	<input type="radio" name="rbRating1"
+			value="Good" />Good
+		<br />
+	<input type="radio" name="rbRating1"
+			value="Fair" />Fair
+		<br />
+	<input type="radio" name="rbRating1"
+			value="Poor" />Poor
+</p>
+
+<p>How do you rate the lab materials?
+		<br />
+	<input type="radio" name="rbRating2"
+			value="Excellent" />Excellent
+		<br />
+	<input type="radio" name="rbRating2"
+			value="Good" />Good
+		<br />
+	<input type="radio" name="rbRating2"
+			value="Fair" />Fair
+		<br />
+	<input type="radio" name="rbRating2"
+			value="Poor" />Poor
+</p>
+
+<p>
+	<input type="submit" value="Submit Page" />
+	<input type="reset" value="Reset" />
+</p>
+
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page3">Previous Page</a>
+<br />
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page5">Next Page</a>
+</form>
+</body>
+</html>

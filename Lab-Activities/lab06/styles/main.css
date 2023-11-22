@@ -1,0 +1,68 @@
+/*
+filename: main.css
+author: Hai Nam Ngo
+created: 04/05/2023
+modified: 04/05/2023
+description: style for lab06task1.html
+*/
+
+/*main.css*/
+body {font-family: arial:}
+article{
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+header{
+	background-image: url(images/background.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 158px;
+	width: 100%;
+}
+
+header h1{
+	font-family: 'Love Ya Like A Sister',arial;
+	letter-spacing: 4px;
+	font-size: 72px;
+	padding-top: .5em;
+	padding-left: .5em;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	list-style: none;
+	float: left;
+	font-size: 93%;
+}
+
+nav ul li a{
+	display: block;
+	font-weight: bold;
+	padding: .625em 3.5em; /*10px 15px*/
+	text-decoration: none;
+	color: #000;
+	border-right: 1px solid #bababa;
+}
+
+img {max-width: 100%}
+#section1, #section2, #sectiom3{
+	float: left;
+	width: 30%;
+	text-align: justify;
+	margin: 1em 1em 1em 1em;
+}
+
+footer{clear: both;}
+footer h3{
+	font-family: 'Love Ya Like A Sister',arial;
+	background-color: #94d4ff;
+	padding: .5em 0 .5em .5em;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+

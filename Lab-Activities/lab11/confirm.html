@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rohirrim Booking Confirmation</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Rohirrim Booking Confirmation" />
+	<meta name="keywords"    content="MiddleEarth, Tours, Rohan" />
+	<meta name="author"      content="Gamunu Dassanayake" />
+	<script> src="confirm.js" </script>
+</head>
+
+<body>
+
+<header>
+	<h1>Rohirrim Ranch Tours</h1>
+	<h2>Booking Confirmation</h2>
+</header>
+
+<form id="bookform">
+	<fieldset>
+		<legend>Your Booking</legend>
+		<p>Your Name: <span id="confirm_name"></span></p>
+		<p>Species: <span id="confirm_species"></span></p>
+		<p>Age: <span id="confirm_age"></span></p>
+		<p>Trips booked: <span  id="confirm_trip"></span></p>
+		<p>Food Preference: <span  id="confirm_food"></span></p>
+		<p>Number of beings: <span  id="confirm_partySize"></span></p>
+		<p>Total Cost: $<span  id="confirm_cost"></span></p>
+		<input type="hidden" name="firstname" id="firstname" />
+		<input type="hidden" name="lastname" id="lastname" />
+		<input type="hidden" name="age" id="age" />
+		<input type="hidden" name="species" id="species" />
+		<input type="hidden" name="trip" id="trip" />
+		<input type="hidden" name="food" id="food" />
+		<input type="hidden" name="partySize" id="partySize" />
+		<input type="hidden" name="cost" id="cost" />
+		
+		<p><label for="date">Preferred Date</label>
+			<input type="text" id="date" name="bookday" required="required" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Format dd/mm/yyyy" maxlength="10" size="10" />
+		</p>
+		<input type="submit" value="Confirm Booking" />
+		<button type="button" id="cancelButton">Cancel</button>
+    </fieldset>
+</form>
+
+<footer>
+<div>
+	<h2 class="fineprint">Conditions Apply</h2>
+	<p class="fineprint">  Rohirrim Dude Ranch management takes no responsibility for any injury, spells (sleeping or otherwise) , spider-bites, or for anything whatsoever.	</p> 
+</div>
+	<p id="contact" >Any enquiries please email the <a href="mailto:wormtongue@saruman.net.me">manager</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+/*
+filename: mobile.css
+author: Hai Nam Ngo
+created: 04/05/2023
+modified: 04/18/2023
+description: style for all files in assign1 - mobile version
+*/
+
+/* Styling the menu (navigator) */
+header {
+	background-image: url(images/menubackground.png); /* Set the background image */
+	background-repeat: repeat-x; /* Repeat the background image along the x-axis */
+	background-position: bottom; /* Set the background image position to the bottom */
+	height: 100px; /* Set the height of the header to 100 pixels for mobile */
+	width: 100%; /* Set the width of the header to 100% */
+	text-align: center; /* Center align the text inside the header */
+}
+
+nav a {
+	background-color: white; /* Set the background color of nav links to white */
+	text-decoration: none; /* Remove underline from nav links */
+	padding: 0.5em; /* Set padding for nav links for mobile */
+}
+
+/* Styling for web typography: fonts, color, text alignment */
+/* Styling for body element */
+body {
+	background-color: #AA96DA; /* Set the background color of body to #AA96DA */
+	font-size: 16px; /* Set the font size of body to 16 pixels for mobile */
+}
+
+* {
+	font-family: calabri, sans-serif; /* Set the font family for all elements to Calibri and sans-serif as fallback */
+}
+
+h1 {
+	color: #FFFFD2; /* Set the color of h1 element to #FFFFD2 */
+	font-size: 1.8em; /* Set the font size of h1 element to 1.8em for mobile */
+	font-weight: bold; /* Set the font weight of h1 element to bold */
+}
+
+/* Styling for aside and footer elements */
+aside, footer {
+	font-style: italic; /* Set the font style of aside and footer elements to italic */
+}
+
+h3 {
+	background-color: #FFFFD2; /* Set the background color of h3 elements to #FFFFD2 */
+	text-align: center; /* Center align the text inside h3 elements */
+	font-size: 1.2em; /* Set the font size of h3 elements to 1.2em for mobile */
+}
+
+h2, h3 {
+	color: rgb(0, 128, 128); /* Set the color of h2 and h3 elements to rgb(0, 128, 128) */
+	font-weight: bold; /* Set the font weight of h2 and h3 elements to bold */
+	font-size: 1.3em; /* Set the font size of h2 and h3 elements to 1.3em for mobile */
+}
+
+/* Styling for ordered and unordered lists */
+ol {
+	list-style-type: lower-roman; /* Set the list style type of ordered lists to lower-roman */
+}
+
+ul {
+	list-style-type: square; /* Set the list style type of unordered lists to square */
+}
+
+/* Styling for table, th, and td elements */
+table, th, td {
+	border: 1px solid black; /* Set a 1px solid black border for table, th, and td elements */
+}
+
+/* Styling for hover effect on aside element */
+aside:hover {
+	background-color: darkblue; /* Set the background color of aside element on hover to darkblue */
+}
+
+header {
+	height: 60px; /* Reduce the height of the header to 60 pixels for mobile */
+}
+
+nav a {
+	padding: 0.3em; /* Reduce the padding of nav links for mobile */
+}
+
+body {
+	font-size: 14px; /* Reduce the font size of body to 14 pixels for mobile */
+}
+
+h1 {
+	font-size: 1.5em; /* Reduce the font size of h1 element to 1.5em for mobile */
+}
+
+h3 {
+	font-size: 1em; /* Reduce the font size of h3 elements to 1em for mobile */
+}
+
+h2, h3 {
+	font-size: 1.1em; /* Reduce the font size of h2 and h3 elements to 1.1em for mobile */
+}
+
+/* Hide the table border for mobile */
+table, th, td {
+	border:1px solid black;
+}
+
+/*animation*/
+/*fadde-in animation*/
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*bounce animation*/
+.bounce{
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce{
+    0%,
+    20%,
+    50%,
+    80%,
+    100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}

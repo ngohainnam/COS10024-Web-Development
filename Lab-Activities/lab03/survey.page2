@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Web development" />
+		<meta name="keywords" content="HTML Markup" />
+		<meta name="author" content="Hai Nam Ngo" />
+		<title>Web Development Survey</title>
+</head>
+<body>
+<h1>Unit Delivery Survey</h1>
+<p>Please enter your name, gender and degree program below.</p>
+
+		<!--Creating form-->
+<form id="survey" method="post"
+		action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+		
+	<p>
+		<label>Full Name (optional)
+		<input type="text" name="fname" size="20"/>
+		</label>
+	</p>
+	<p>
+		Gender:
+		<label>Male
+		<input type="radio" name="gender" value="M" /></label>
+		<label>Female
+		<input type="radio" name="gender" value="F" /></label>
+	</p>
+	<p>
+		<label>Degree Program:</label>
+		<select name="degree">
+		<option value="IT">IT</option>
+		<option value="Multimedia">Multimedia</option>
+		<option value="Design">Design</option>
+		</select>
+	</p>
+		
+	<p>
+		<input type="submit" value="Submit Page" />
+		<input type="reset" value="Reset" />
+	</p>
+
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page1">Previous Page</a>
+<br />
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page3">Next Page</a>
+</form>
+</body>
+</html>
+
+	

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Web development" />
+		<meta name="keywords" content="HTML Markup" />
+		<meta name="author" content="Hai Nam Ngo" />
+		<title>Web Development Survey</title>
+</head>
+<body>
+<h1>Unit Delivery Survey</h1>
+
+<form id="survey" method="post"
+		action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+
+<p>
+	<label>What do you like best about the unit: (no more than 150 words)</label><br />
+	<textarea name="comments" rows"10" cols="50">
+	</textarea>
+</p>
+
+<p>
+	<input type="submit" value="Submit Survey" />
+	<input type="reset" value="Reset" />
+</p>
+</form>
+	
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page4">Previous Page</a>
+<br />
+<a href="https://mercury.swin.edu.au/cos10024/s103488515/lab03/survey.page1">Back to Home</a>
+
+</body>
+</html>
+	

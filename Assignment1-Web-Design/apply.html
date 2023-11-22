@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Information </title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Creating a page for displaying basic information about me" />
+  <meta name="keywords" content="Basic information,HTML5 file" />
+  <meta name="author" content="Hai Nam Ngo"  /> 
+  
+  <!--Reference to external basic CSS file-->
+  <link href="style/desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" />
+  <link href="style/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" />
+
+ </head>
+
+<!--Beginning of the content-->
+<body>
+<main>
+<!--Welcome header-->
+	<header>
+	<div class="bounce">
+	<h1>Welcome to Ceylon Textile Suppliers (CTS)</h1>
+	<h2><em>"Matching style and class with luxury and comfort"</em></h2>
+	</div>
+	</header>
+
+<!--creating navigation to other pages-->
+<div class="fade-in">
+<nav>
+	<a href="index.html">Index</a>
+	<a href="jobs.html">Jobs</a>
+	<a href="apply.html">Apply</a>
+	<a href="about.html">About</a>
+	<a href="enhancement.html">Enhancement</a>
+</nav>	
+</div>		
+<hr />		
+<!--a link to my student email-->		
+        <a href="mailto:103488515@student.swin.edu.au" class="email-link">Email: 103488515@student.swin.edu.au</a>
+<hr />
+
+	<h1>CTS Application Form</h1>
+	<!--insert an images (just pretending this is the images of the company employees, but it is just me and my friends-->
+	<img src="images/swinburnevn.jpg" alt="Our employees in 2022" title="Our employees in 2022" width="500" height="300"/>
+	<p>Please enter information down below.</p>
+	
+	<!--Creating form-->
+	<form id="application" method="post"
+			action="https://mercury.swin.edu.au/it000000/formtest.php">
+		
+		<!--creating job reference section-->
+		<p>
+			<label>Job reference number
+			<!--this section is required and only accept 5 characters-->
+			<input type="text" name="jobref" pattern="[a-zA-Z0-9]{5}" title="Please enter exactly 5 alphanumeric characters" required/>
+			</label>
+		</p>
+		
+		<!--creating name section-->
+		<p>
+			<label>First name
+			<!--the maximum ammount of characters will be 20-->
+			<input type="text" name="firstname" size="20" title="max 20 alpha characters" required/>
+			</label>
+		</p>
+		
+		<p>
+			<label>Last name
+			<input type="text" name="lastname" size="20" title="max 20 alpha characters" required/>
+			</label>
+		</p>
+		
+		<!--creating DOB section-->
+		<p>
+			<label>Date of birth
+			<!--d{2} means it can only accept 2 digits number, if I do this 3 times it will become the format dd/mm/yy-->
+			<input type="text" name="date" pattern="\d{2}/\d{2}/\d{2}" title="Please enter a valid date in the format dd/mm/yy" required/>
+			</label>
+		</p>
+		
+		<!--creating radio for gender-->
+		<p>
+			Gender:
+			<label>Male
+			<input type="radio" name="gender" value="M" required/>
+			</label>
+			<label>Female
+			<input type="radio" name="gender" value="F" required/>
+			</label>
+		</p>
+		
+		<!--creating address section-->
+		<p>
+			<label>Street Address
+			<input type="text" name="address" size="40" required/>
+			</label>
+		</p>
+		
+		<!--creating suburb section-->
+		<p>
+			<label>Suburb/town
+			<input type="text" name="suburb" size="40" required/>
+			</label>
+		</p>
+	
+		<!--creating state section-->
+		<p>
+			<label>State</label>
+			<select name="state">
+			<option value="VIC">VIC</option>
+			<option value="NSW">NSW</option>
+			<option value="QLD">QLD</option>
+			<option value="NT">NT</option>
+			<option value="WA">WA</option>
+			<option value="SA">SA</option>
+			<option value="TAS">TAS</option>
+			<option value="ACT">ACT</option>
+			</select>
+		</p>
+		
+		<!--creating postcode section-->
+		<p>
+			<label>Postcode
+			<input type="text" name="postcode" pattern="[0-9]{4}" title="Please enter a valid postcode with 4 digits" required/>
+			</label>
+		</p>
+		
+		<!--creating email section-->
+		<p>
+			<label>Email
+			<input type="email" name="email" required/>
+			</label>
+		</p>
+		
+		<!--creating phone number section-->
+		<p>
+			<label>Phone number
+			<input type="text" name="phone" pattern="[0-9\s]{8,12}" title="Please enter a valid phone number with 8-12 digits or spaces" required/>
+			</label>
+		</p>
+		
+		<!--creating skill section by using checkbox-->
+		<p>
+			<label>What skill that you have in order to meet our requirement for the job?</label>
+			<br />
+			<label><em>*Please note that if you leave this part, we will assume that you have sale experience</em></label>
+			<br />
+			<input type="checkbox" name="skill"
+					value="Web Design" />Web Design
+				<br />
+			<input type="checkbox" name="skill"
+					value="Fashion Design" />Fashion Design
+				<br />
+			<input type="checkbox" name="skill"
+					value="Sale Experience" checked/>Sale Experience
+				<br />
+			<input type="checkbox" name="skill"
+					value="Communication" />Communication
+				<br />
+			<input type="checkbox" name="skill"
+					value="Leading skill" />Leading skill
+				<br />
+			<input type="checkbox" name="skill"
+					value="Other skills" />Other skills
+				<br />
+				<!-- creating text area for other skill section-->
+			<label> Please give us more details about your skills (optional)
+			<br />
+					<textarea name="otherskill" rows="10" cols="50">
+					</textarea>
+			</label>
+		</p>
+		
+		<!--creating submit and reset button for submitting form and reset everything to blank-->
+		<p>
+			<input type="submit" value="Apply"/>
+			<input type="reset" value="Reset"/>
+		</p>
+		</form>
+	</main>
+
+<!--creating aside part-->
+	<aside>
+	<h2><em>**Please note that your application form will be saved and send to the head of Human Resource- Hai Nam Ngo</em></h2>
+	</aside>
+
+<!--creating the footer-->
+	<hr />
+	<footer>
+	<p>Contact Us: <a href="mailto:103488515@student.swin.edu.au" class="email-link">103488515@student.swin.edu.au</a></p>
+	<p>© 2023 Ceylon Textile Suppliers (CTS). Hai Nam Ngo. All rights reserved.</p>
+	</footer>
+</body>
+</html>

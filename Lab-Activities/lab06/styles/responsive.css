@@ -1,0 +1,59 @@
+/*responsive.css*/
+/*media query for display: over 500*/
+
+@media screen and (min-width: 31.25em) {
+	nav ul li{
+		width: 33%;
+	}
+	
+	#section1 {
+		width: 33%;
+	}
+	
+	#section2 {
+		width: 43%
+	}
+	
+	#section3 {
+		clear: both;
+		float: none;
+		width: 90%;
+		margin: 0 1em 1em 1.5em;
+	}
+	
+	#section3 img{
+		float: left;
+		width: 30%;
+		margin: .5em 1em 1em 0;
+	}
+	
+	article {
+		min-width: 600px;
+	}
+}
+
+/*media query for display: under 500px*/
+@media screen and (max-width: 31.25em){
+	header h1{
+		font-size: 20px;
+		padding: 0;
+		text-align:center;
+	}
+	
+	nav ul li{
+		width: 100%;
+	}
+
+	#section1,#section2,#section3{
+		margin: 0;
+		float: none;
+		width: 100%;
+	}
+
+	img{
+		display:block;
+		margin: 0 auto;
+	}
+	article{
+		min-width: 300px;
+}

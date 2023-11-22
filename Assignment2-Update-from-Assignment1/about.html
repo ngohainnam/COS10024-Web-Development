@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Information </title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Creating a page for displaying basic information about me" />
+  <meta name="keywords" content="Basic information,HTML5 file" />
+  <meta name="author" content="Hai Nam Ngo"  /> 
+  
+  <!--Reference to external basic CSS file-->
+  <link href="style/desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" />
+  <link href="style/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" />
+  <script src="scripts/enhancements.js"></script>	
+ </head>
+
+<!--Beginning of the content-->
+<body id="about">
+<main>
+<!--Welcome header-->
+	<header>
+	<div class="bounce">
+	<h1>Welcome to Ceylon Textile Suppliers (CTS)</h1>
+	<h2><em>"Matching style and class with luxury and comfort"</em></h2>
+	</div>
+	</header>
+
+<!--creating navigation to other pages-->
+<div>
+	<nav>
+		<div class="links">
+		<a data-active="index" href="index.html">Index</a>
+		<a data-active="jobs" href="jobs.html">Jobs</a>
+		<a data-active="apply" href="apply.html">Apply</a>
+		<a data-active="about" href="about.html">About</a>
+		<a data-active="enhancement" href="enhancement.html">Enhancement</a>
+		<a data-active="enhancement2" href="enhancement2.html">Enhancement 2</a>
+		</div>
+	</nav>	
+</div>	
+<hr />		
+<!--a link to my student email-->		
+        <a href="mailto:103488515@student.swin.edu.au" class="email-link">Email: 103488515@student.swin.edu.au</a>
+<hr />
+
+<!--creating peronsal infomation using definition-->
+	<dl>
+	<dt>My name:</dt>
+	<dd>Hai Nam Ngo</dd>
+	</dl>
+	<br />
+	<dl>
+	<dt>Student number:</dt>
+	<dd>103488515</dd>
+	</dl>
+	<br />
+	<dl>
+	<dt>My tutor's name:</dt>
+	<dd>Dr. Gamunu Dassanayake</dd>
+	</dl>
+	<br />
+	<dl>
+	<dt>My current course:</dt>
+	<dd>Diploma of Information Technology (UniLink)</dd>
+	</dl>
+
+<!--insert three images of myself by using figure and img-->	
+	<figure class="image">
+	<img src="images/gentleman.png" alt="Me as a gentleman" width="300" height="500"/>
+	<img src="images/meattheport.png" alt="Me playing at the port" width="300" height="500"/>
+	<img src="images/meatmuseum.png" alt="Me at the Australia Museum" width="300" height="500"/>
+	<br />
+	</figure>	
+<!-- create a line to seperate two parts-->
+	<hr />
+
+<!--creating timetable by using table-->
+<h2 id="table">My student timetable in Diploma Course</h2>
+      <table>
+        <caption><em>Timetable details</em></caption>
+		<!--creating header for the table-->
+	  <thead>
+		<tr>
+		  <!-- Creating a cell that spans 5 rows for "Time" -->
+		  <th rowspan="5" scope="row">Time</th>
+		  <!-- Creating 5 cells for "Day" -->
+		  <th colspan="5" scope="col">Day</th>
+		</tr>
+		
+		<tr>
+		  <!-- Creating 5 cells for each day of the week -->
+		  <th scope="col">Monday</th>
+		  <th scope="col">Tuesday</th>
+		  <th scope="col">Wednesday</th>
+		  <th scope="col">Thursday</th>
+		  <th scope="col">Friday</th>
+		</tr>
+	  </thead>
+		
+		<!--creating body for the table-->
+        <tbody>
+         <tr>
+		 <!--insert information (time) for the first row-->
+		   <th scope="row">8:30am - 10:30am</th>
+		   <!--this is how I display a class in a timetable-->
+           <td>
+		   COS10023<br />
+		   Lecture 1(1)<br />
+		   Hawthorn ONLINE 
+		   </td>
+		   <!--end of displaying a class-->
+		   
+		   <!--creating the second class-->
+           <td>
+		   COS10007<br />
+		   Lab 2(1)<br />
+		   Hawthorn TA110
+		   </td>
+		   
+		   <!--creating the third class-->
+           <td>
+		   COS10023<br />
+		   Lab 2(1)<br />
+		   Hawthorn EN401
+		   </td>
+		   <td></td>
+		   <td></td>
+         </tr>
+		 
+		 <!--start with the second row-->
+         <tr>
+		   <th scope="row">10:30am - 12:30pm</th>
+           <td>
+		   COS10024<br />
+		   Lecture 1(1)<br />
+		   Hawthorn ONLINE
+		   </td>
+		   
+           <td></td>
+           <td></td>
+		   
+		   <td>
+		   COS10023<br />
+		   Lab 1(1)<br />
+		   Hawthorn EN207
+		   </td>
+		   
+		   <td>
+		   COS10024<br />
+		   Lab 1(1)<br />
+		   Hawthorn TA110
+		   </td>
+		  </tr>
+		 
+		 <!--start with the third row-->
+         <tr>
+		   <th scope="row">10:30am - 12:30am</th>
+           <td></td>
+           <td></td>
+		   
+           <td>
+		   COS10024<br />
+		   Lab 2(1)<br />
+		   Hawthorn TB201
+		   </td>
+		   
+		   <!--Creating blank cell for the timetable-->
+		   <td></td>
+		   <td></td>
+         </tr>
+
+         <tr>
+		   <th scope="row">01:30pm - 03:30pm</th>
+		   <!--Creating blank cell for the timetable-->
+           <td></td>
+           <td></td>
+           <td></td>
+		   
+		   <td>
+		   COS10007<br />
+		   Lab 1(1)<br />
+		   Hawthorn TC223
+		   </td>
+		   <td></td>
+		   
+         </tr>
+		
+		<!--start with the fourth row-->
+         <tr>
+		   <th scope="row">04:30pm - 06:30pm</th>
+           <td>
+		   COS10007<br />
+		   Lecture 1(1)<br />
+		   Hawthorn ONLINE
+		   </td>
+		   <!--Creating blank cell for the timetable-->
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+         </tr>
+		 
+        </tbody>
+		</table>
+		<!--end of the timetable-->
+		<hr />
+		
+		<!--Second section for personal profile-->
+		<section id="profile">
+		<h2>Personal Things about me</h2>
+		<h3>Some of superheroes movies that I like?</h3>
+		<!--creating ordered list for films-->
+		<ol>
+		    <li>Avengers: Endgame</li>
+			<li>The Dark Knight</li>
+			<li>Spider-Man: Into the Spider-Verse</li>
+			<li>Black Panther</li>
+			<li>Wonder Woman</li>
+		</ol>
+		
+		<!--creating headings with two levels and paragraphs for more information-->
+		<h3>Where did I study?</h3>
+		<p>From 2018 to 2021, I studied at Phan Huy Chu Highschool back in Vietnam- my home country</p>
+		<p>It was a really memorable time for me!</p>
+		<!--insert images-->
+		<figure class="image">
+		<img src="images/highschool.png" alt="My highschool classmates" width="600" height="400"/>
+		</figure>
+		
+		<h4>And after that...?</h4>
+		<p>I started to study in Swinburne Vietnam in 2021, major in International Business, I also joined some good works there and had so much fun</p>
+			<!--insert images-->
+		<figure class="image">
+		<img src="images/swinburnevn.jpg" alt="Social Work in Swinburne Vietnam" width="600" height="400"/>
+		<img src="images/meinameeting.png" alt="Me in a meeting" width="600" height="400"/>
+		</figure>
+		
+		<p>But everything has changed when I move to Australia and switch to Computer Science from October 2022 until now!</p>
+		<h2>I met lots of people and enjoy my life in Australia</h2>
+		<p>Sometimes I hang out with my friends</p>
+			<!--insert images-->
+		<figure class="image">
+		<img src="images/meandmyfriend.png" alt="Me and my friends" width="600" height="400"/>
+		</figure>
+		<p>...or maybe play some billiard in the free time!</p>
+		
+			<!--insert images-->
+		<figure class="image">
+		<img src="images/meplayingbilliard.png" alt="Hai Nam's playing billiard" width="300" height="500"/>
+		</figure>
+		</section>
+</main>		
+<!--insert aside part-->
+	<aside>
+	  <article>
+		<h3>If I have to say something about myself?</h3>
+		<p>I consider myself to be a sociable person who always has a positive outlook on life. I am eager to collaborate on projects as part of a team and to take on new challenges in order to broaden my personal experience.</p>
+	  </article>	
+	</aside>
+<!--end of body and main-->
+
+<!--insert footer-->
+	<hr />
+	<footer>
+	<p>Contact Us: <a href="mailto:103488515@student.swin.edu.au" class="email-link">103488515@student.swin.edu.au</a></p>
+	<p>© 2023 Ceylon Textile Suppliers (CTS). Hai Nam Ngo. All rights reserved.</p>
+	</footer>
+</body>
+</html>
